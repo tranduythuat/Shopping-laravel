@@ -1,0 +1,41 @@
+.checkout-input
+{
+    font-family: Poppins-Regular;
+    width: 100%;
+    border: 1px solid #e6e6e6;
+    font-size: 15px;
+    color: #888;
+    min-height: 50px;
+    padding: 15px;
+    margin: 5px auto 10px;
+    border-radius: 2px;
+}
+
+.logo img {
+    min-width: 200px;
+}
+.list-method-shipping {
+    border: 1px solid #e6e6e6;
+    margin-top: 15px;
+    min-height: 50px;
+    padding: 15px;
+    border-radius: 2px;
+    width: 100%;
+}
+.custom-control-label::before,
+.custom-control-label::after {
+    top: .8rem;
+    width: 1.25rem;
+    height: 1.25rem;
+}
+.fa-money-bill-alt, .fa-arrow-left{
+    color: rgb(0, 89, 255);
+}
+#orderWrapItem {
+    max-height: 250px;
+    overflow: auto;
+}
+
+.header-order-buttons {
+    display: block;
+}

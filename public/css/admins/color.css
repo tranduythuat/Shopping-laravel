@@ -1,0 +1,39 @@
+input[type = color] {
+    width: 100%;
+}
+.color-rounder{
+    width: 20px;
+    height: 20px;
+}
+.page-item.active .page-link {
+    background-color: rgb(3, 91, 97);
+    color: white;
+}
+.fa-info {
+    color: rgb(4, 178, 201);
+}
+.fa-edit {
+    color: rgb(236, 181, 0);
+}
+.fa-trash, .fa-times {
+    color: rgb(202, 0, 0);
+}
+.fa-reply {
+    color: green;
+}
+.toggle-handle {
+    background-color: white;
+}
+.error{
+    color: red;
+}
+/* product */
+.select2-container--default .select2-selection--multiple .select2-selection__choice__display{
+    background-color: cadetblue;
+    color: white;
+}
+/* product items */
+.image-by-color {
+    position: relative;
+    left: 30px;
+}

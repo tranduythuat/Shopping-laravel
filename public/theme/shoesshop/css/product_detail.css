@@ -1,0 +1,110 @@
+.list-button-color ul,
+.list-button-size ul{
+    display: flex;
+}
+.list-button-color ul li,
+.list-button-size ul li {
+    position: relative;
+    min-width: 5rem;
+    min-height: 2.5rem;
+    box-sizing: border-box;
+    margin-right: 10px;
+    padding: 0px;
+    outline: 0;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.list-button-color ul li label,
+.list-button-size ul li label{
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    margin-bottom: 0px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgb(112, 112, 112);
+    color: rgb(112, 112, 112);
+}
+
+.list-button-color ul li input:disabled ~ label,
+.list-button-color ul li input:disabled ~ label {
+    color: rgb(197, 197, 197);
+    border: 1px solid rgb(197, 197, 197);
+    cursor: not-allowed;
+}
+
+.list-button-color ul li label:hover,
+.list-button-size ul li label:hover {
+    border: 1px solid rgb(0, 158, 179);
+    color: rgb(0, 158, 179);
+}
+
+.list-button-color ul li input,
+.list-button-size ul li input{
+    /* display: none; */
+    box-sizing: border-box;
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.list-button-color ul li label::after,
+.list-button-size ul li label::after {
+    content: "";
+    border-left: 1.2rem solid transparent;
+	border-right: 0px solid transparent;
+	border-bottom: 1.2rem solid rgb(0, 158, 179);
+    position: absolute;
+    display:  none;
+    bottom: 0;
+    right: 0;
+}
+
+.list-button-color ul li label::before,
+.list-button-size ul li label::before {
+    font-family: "Font Awesome 5 Free";
+    content: "\f00c";
+    position: absolute;
+    display:  none;
+    color: rgb(255, 255, 255);
+    z-index: 1000;
+    font-weight: 600;
+    font-size: 9.5px;
+    bottom: 0;
+    right: 0;
+}
+
+.list-button-size ul li input:checked ~ label::after,
+.list-button-size ul li input:checked ~ label::before {
+   display: inline-block;
+}
+
+.list-button-size ul li input:checked ~ label,
+.list-button-size ul li input:checked ~ label {
+   border: rgb(0, 158, 179) solid 1px;
+   color: rgb(0, 158, 179);
+}
+
+.list-button-color ul li input:checked ~ label::after,
+.list-button-color ul li input:checked ~ label::before {
+   display: inline-block;
+}
+
+.list-button-color ul li input:checked ~ label,
+.list-button-color ul li input:checked ~ label {
+    border: rgb(0, 158, 179) solid 1px;
+   color: rgb(0, 158, 179);
+}
+
+.js-addcart-disabled {
+    background-color: rgb(112, 112, 112);
+    cursor: not-allowed;
+}
+.js-addcart-disabled:hover{
+    background-color: rgb(112, 112, 112);
+}
